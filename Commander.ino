@@ -10,7 +10,7 @@ Q2HX711 scale(7,6);
 /* Задержка рабочего цикла */
 #define LOOP_DELAY 80
 /* Длина стека взвешиваний */
-#define STACK_SIZE 5
+#define STACK_SIZE 7
 /* Допустимое отклонение в граммах */
 #define THRESHOLD 3;
 
