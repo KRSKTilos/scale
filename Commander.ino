@@ -5,14 +5,14 @@
  * @author krsktilos.
  */
 
-Q2HX711 scale(7,6);
+Q2HX711 scale(2,3);
 
 /* Задержка рабочего цикла */
-#define LOOP_DELAY 80
+#define LOOP_DELAY 60
 /* Длина стека взвешиваний */
 #define STACK_SIZE 7
 /* Допустимое отклонение в граммах */
-#define THRESHOLD 3;
+#define THRESHOLD 10;
 
 /* Тестовая калибровка */
 #define DEBUG_CALIBRATIONVALUE 8776400;
@@ -25,11 +25,11 @@ Q2HX711 scale(7,6);
 #define PROD_ZEROVALUE 8805300;
 
 /* Чистое значение с внешним давлением */
-long CALIBRATIONVALUE = DEBUG_CALIBRATIONVALUE;
+long CALIBRATIONVALUE = PROD_CALIBRATIONVALUE;
 /* Стабилизационный вес в граммах */
-float CALIBRATIONMASS = DEBUG_CALIBRATIONMASS;
+float CALIBRATIONMASS = PROD_CALIBRATIONMASS;
 /* Чистое значение без внешнего давления */
-long ZEROVALUE = DEBUG_ZEROVALUE;
+long ZEROVALUE = PROD_ZEROVALUE;
 /* Коэффициент масштабирования веса */
 float koef = 1.0;
 
